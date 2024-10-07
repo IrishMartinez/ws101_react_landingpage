@@ -1,0 +1,89 @@
+body {
+  margin: 0;  
+  padding: 0; 
+  overflow: hidden; 
+  background:rgb(27, 26, 26)
+}
+
+.box {
+  position: relative; 
+  width: 100%;    
+  height: 100vh;   
+}
+.box h3 {
+  font-size: 5.5vw;
+  margin-top: 6rem;
+  color: #ed6a6e;
+  margin-bottom: 0.1rem;
+}
+
+.box p {
+  font-size: 1.5vw;
+  color: white;
+  width: 100%;
+  border: 2px solid white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  transition: 0.03s;
+}
+
+.heading {
+  font-size: 4vw;
+  color: #ed6a6e;
+  
+}
+.about-content1 h3 {
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+
+.about-content1 .span5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 2px solid white;
+  padding: 9px 20px;
+  border-radius: 10px;
+  transition: 0.03s;
+  display: inline-block;
+  font-size: 1.5vw;
+}
+
+.about-content1 .span5::before {
+  content: "Frontend Developer";
+  color: rgb(255, 255, 255);
+  animation: words 20s infinite steps(1);
+}
+
+.about-content1 .span5::after {
+  position: absolute;
+  width: 2px;
+  color: #ed6a6e;
+  animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes words {
+  0%, 20% {
+    content: "Website development refers to the process of building and maintaining websites It encompasses all the tasks involved in creating a website, from coding and writing markup to designing, planning, and deploying a website on the internet. This can include both front-end (client-side) and back-end (server-side) development." ;
+  }
+  21%, 40% {
+    content: "Web design is the process of creating the visual layout, user interface, and overall aesthetic of a website. It involves planning and building the elements of a website, including structure, layout, graphics, colors, fonts, and images, to ensure a good user experience. Web design focuses more on the look and feel of a site rather than the functionality.";
+  }
+  41%, 60% {
+    content: "Frontend development, also known as client-side development, involves creating the part of a website or web application that users interact with directly. This includes everything from the layout and navigation to the buttons and forms. Frontend developers use technologies like HTML, CSS, and JavaScript to build and style the visual components of a website.";
+  }
+  61%, 80% {
+    content: "Backend development, or server-side development, focuses on the server, application, and database that work behind the scenes to support a website's functionality. Backend developers are responsible for creating and maintaining the technology required to process data and handle requests from the front end.";
+  }
+  81%, 100% {
+    content: "Full-stack development refers to the practice of working on both the front end (client side) and back end (server side) of a website or web application. A full-stack developer has the skills and knowledge to handle all aspects of web development, including designing user interfaces, creating server-side logic, managing databases, and integrating various services.";
+  }
+}
